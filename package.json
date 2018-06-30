@@ -1,0 +1,23 @@
+{
+  "name": "test_automation",
+  "version": "1.0.0",
+  "description": "Test automation framework using a NodeJS stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wattersnathen/test_automation.git"
+  },
+  "keywords": [
+    "Test",
+    "Automation"
+  ],
+  "author": "Nathen Watters <wattersnathen@gmail.com>",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "bugs": {
+    "url": "https://github.com/wattersnathen/test_automation/issues"
+  },
+  "homepage": "https://github.com/wattersnathen/test_automation#readme"
+}
