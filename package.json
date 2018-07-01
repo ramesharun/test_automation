@@ -24,6 +24,10 @@
   "homepage": "https://github.com/wattersnathen/test_automation#readme",
   "devDependencies": {
     "allure-commandline": "^2.5.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "mocha-allure-reporter": "^1.4.0",
