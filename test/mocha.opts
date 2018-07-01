@@ -1,0 +1,3 @@
+--timeout 120000
+--retries 0
+--reporter mocha-allure-reporter

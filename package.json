@@ -4,20 +4,33 @@
   "description": "Test automation framework using a NodeJS stack",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "mocha test/",
+    "installSelenium": "$(npm bin)/selenium-standalone install",
+    "startSelenium": "$(npm bin)/selenium-standalone start",
+    "stopSelenium": "pkill -f selenium-standalone",
+    "buildAllure": "$(npm bin)/allure generate allure-results/",
+    "openAllure": "$(npm bin)/allure open allure-report --host localhost"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wattersnathen/test_automation.git"
   },
-  "keywords": [
-    "Test",
-    "Automation"
-  ],
   "author": "Nathen Watters <wattersnathen@gmail.com>",
   "license": "SEE LICENSE IN ./LICENSE",
   "bugs": {
     "url": "https://github.com/wattersnathen/test_automation/issues"
   },
-  "homepage": "https://github.com/wattersnathen/test_automation#readme"
+  "homepage": "https://github.com/wattersnathen/test_automation#readme",
+  "devDependencies": {
+    "allure-commandline": "^2.5.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "nightwatch": "^0.9.21",
+    "selenium-standalone": "^6.15.1",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "winston": "^3.0.0"
+  }
 }
