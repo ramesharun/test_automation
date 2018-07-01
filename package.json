@@ -4,11 +4,12 @@
   "description": "Test automation framework using a NodeJS stack",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/",
-    "installSelenium": "$(npm bin)/selenium-standalone install",
-    "startSelenium": "$(npm bin)/selenium-standalone start",
+    "test": "npm run clearDirs; mocha test/",
+    "installSelenium": "$(npm bin)/selenium-standalone install --config=./seleniumServerConfig.js",
+    "startSelenium": "$(npm bin)/selenium-standalone start --config=./seleniumServerConfig.js",
     "stopSelenium": "pkill -f selenium-standalone",
-    "buildAllure": "$(npm bin)/allure generate allure-results/",
+    "clearDirs": "$(npm bin)/rimraf screenshots/ allure-re*/*",
+    "buildAllure": "$(npm bin)/allure generate allure-results/ --clean",
     "openAllure": "$(npm bin)/allure open allure-report --host localhost"
   },
   "repository": {
@@ -31,6 +32,8 @@
     "supertest": "^3.1.0"
   },
   "dependencies": {
+    "ps-list": "^4.1.0",
+    "rimraf": "^2.6.2",
     "winston": "^3.0.0"
   }
 }
