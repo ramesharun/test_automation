@@ -1,4 +1,4 @@
-require('../lib/nightwatch');
+import '../lib/nightwatch';
 
 describe('Custom Test Suite for Framework Functionality', function() {
 
