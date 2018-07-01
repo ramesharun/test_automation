@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run clearDirs; mocha test/",
-    "installSelenium": "$(npm bin)/selenium-standalone install --config=./seleniumServerConfig.js",
-    "startSelenium": "$(npm bin)/selenium-standalone start --config=./seleniumServerConfig.js",
-    "stopSelenium": "pkill -f selenium-standalone",
+    "seleniumInstall": "$(npm bin)/selenium-standalone install --config=./seleniumServerConfig.js",
+    "seleniumStart": "$(npm bin)/selenium-standalone start --config=./seleniumServerConfig.js",
+    "seleniumStop": "pkill -f selenium-standalone",
     "clearDirs": "$(npm bin)/rimraf screenshots/ allure-re*/*",
-    "buildAllure": "$(npm bin)/allure generate allure-results/ --clean",
-    "openAllure": "$(npm bin)/allure open allure-report --host localhost"
+    "allureBuild": "$(npm bin)/allure generate allure-results/ --clean",
+    "allureOpen": "$(npm bin)/allure open allure-report --host localhost"
   },
   "repository": {
     "type": "git",

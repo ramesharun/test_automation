@@ -1,4 +1,4 @@
-require('../lib/mocha');
+require('../lib/nightwatch');
 
 describe('Custom Test Suite for Framework Functionality', function() {
 
