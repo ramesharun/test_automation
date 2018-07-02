@@ -34,4 +34,16 @@ To test your installation:
   * A new tab in your default browser should launch the Allure Report
   * To kill the Allure server: (from the same terminal) `CTRL+C`
 
+### Defaults
+* Built on an Apple OSx
+* Chrome is the default browser used in UI tests
+* Mocha reporter is defaulted to use `mocha-allure-reporter`. To override, add `--reporter <choice>` to your mocha command
+* Standard mocha was used in conjunction with Nightwatch. See (http://nightwatchjs.org/guide#using-mocha) and find the "Using the standard mocha" section to read more
+  * This was chosen because standard mocha has more plugins available and reduces the context switch between running UI from non-UI test scripts. You'd need to use different commands to run UI tests otherwise
   
+### Agenda (To-Dos)
+- [ ] Build pipeline integration with GitHub
+- [ ] Browser comparability support
+- [ ] SauceLabs/BrowserStack Integration
+- [ ] Test instructions on Windows/Linux
+- [ ] Docker integration
