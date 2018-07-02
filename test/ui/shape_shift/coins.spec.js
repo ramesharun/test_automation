@@ -1,4 +1,5 @@
 import '../../../lib/nightwatch';
+import { default as request } from 'supertest';
 
 describe('Shape Shift Coins UI', function() {
 
@@ -15,6 +16,19 @@ describe('Shape Shift Coins UI', function() {
       .navigateToPage()
       .waitForPageToLoad()
       .assertCoinsCarriedOverAfterClickingContinue();
+
+    client.start(done);
+  });
+
+  it('Quick asset trade should display current rate for the selected pair', function(done) {
+    on.ShapeShift.Homepage()
+      .navigateToPage()
+      .waitForPageToLoad()
+      .getNextFormPage(pair => {
+        console.log('Pair found', pair);
+        on.ShapeShift.Homepage()
+          .assertMarketInfoRateIsAccurateOnScreen(pair);
+      });
 
     client.start(done);
   });

@@ -37,6 +37,11 @@
     "locatorType": "xpath",
     "locator": "//*[contains(text(), 'Enter Order Details') or contains(text(), 'Instant Rate')]"
   },
+  "postContinueDynamicRateText": {
+    "description": "ShapeShift Asset Trading Form Post Continue Changing Text Heading",
+    "locatorType": "css",
+    "locator": "span[ng-hide=\"formData.type == 2\"]"
+  },
   "imgInputCoin": {
     "description": "Image for input coin on asset trading form post continue",
     "locatorType": "css",
