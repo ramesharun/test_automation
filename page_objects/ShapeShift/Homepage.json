@@ -5,6 +5,12 @@
     "locator": "nav.navbar",
     "groups": [ "requiredForPage" ]
   },
+  "shiftForm": {
+    "description": "ShapeShift Asset Trading Form",
+    "locatorType": "css",
+    "locator": "[name='shiftForm']",
+    "groups": [ "requiredForPage" ]
+  },
   "footer": {
     "description": "ShapeShift Page Footer Container",
     "locatorType": "css",

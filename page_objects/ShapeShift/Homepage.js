@@ -4,7 +4,7 @@ import { coin } from '../../lib/urls';
 
 const commands = {
 
-  locators: () => { return locators; },
+  locators: () => locators,
 
   navigationPath: () => {
     return [
