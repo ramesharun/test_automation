@@ -39,6 +39,13 @@ To test your installation:
   * A new tab in your default browser should launch the Allure Report
   * To kill the Allure server: (from the same terminal) `CTRL+C`
 
+### Running Tests
+* `npm test` to run all tests
+* `mocha test/ui/` to run UI only tests
+* `mocha test/api/` to run API only tests
+* `npm run allure:build` to build the allure report
+* `npm run allure:open` to open the allure report on `localhost`
+
 ### Defaults
 * Built on an Apple OSx
 * Chrome is the default browser used in UI tests
