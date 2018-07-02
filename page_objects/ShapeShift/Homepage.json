@@ -1,0 +1,14 @@
+{
+  "navigationBar": {
+    "description": "ShapeShift Page Header Navigation",
+    "locatorType": "css",
+    "locator": "nav.navbar",
+    "groups": [ "requiredForPage" ]
+  },
+  "footer": {
+    "description": "ShapeShift Page Footer Container",
+    "locatorType": "css",
+    "locator": "footer",
+    "groups": [ "requiredForPage" ]
+  }
+}

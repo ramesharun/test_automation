@@ -1,5 +1,6 @@
 --timeout 120000
 --retries 0
+--recursive
 --reporter mocha-allure-reporter
 --require babel-polyfill
 --require babel-register
