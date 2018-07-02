@@ -1,6 +1,6 @@
 import '../lib/nightwatch';
 
-describe('Custom Test Suite for Framework Functionality', function() {
+describe.skip('Custom Test Suite for Framework Functionality', function() {
 
   it('Go to Google Home page and load the body', function(done) {
     browser
