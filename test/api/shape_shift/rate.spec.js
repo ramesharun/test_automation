@@ -26,6 +26,15 @@ describe('Rate API', function() {
       });
   });
 
+  it('btc paired with btc should yield an error message', function() {
+    return request(base)
+      .get('/rate/btc_btc')
+      .then(response => {
+        expect(response.body).to.exist;
+        expect(response.body.error).to.exist;
+      });
+  });
+
   it('BTC paired with currently available coins should return successful responses', function() {
     return request(base)
       .get('/getcoins')
@@ -40,7 +49,7 @@ describe('Rate API', function() {
         return coins.filter(coin => coin !== 'btc');
       })
       .then(coins => {
-        Promise.each(coins, coin => {
+        return Promise.each(coins, coin => {
           console.log(`Making request to /rate/btc_${coin}`);
           return request(base)
             .get(`/rate/btc_${coin}`)
