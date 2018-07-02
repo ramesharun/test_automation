@@ -18,6 +18,7 @@ git clone https://github.com/wattersnathen/test_automation.git
 
 2. Install the dependencies:
 ```shell
+cd test_automation
 npm install
 ```
 
