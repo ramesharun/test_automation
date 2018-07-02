@@ -16,5 +16,35 @@
     "locatorType": "css",
     "locator": "footer",
     "groups": [ "requiredForPage" ]
+  },
+  "shiftFormContinueButton": {
+    "description": "ShapeShift Asset Trading Form Initial Continue Button",
+    "locatorType": "xpath",
+    "locator": "//form[@name='shiftForm']//*[contains(text(), 'Continue')]"
+  },
+  "shiftFormInputCoin": {
+    "description": "ShapeShift Asset Trading Form Input Coin",
+    "locatorType": "css",
+    "locator": ".input-coin span:not(.selected-coin)"
+  },
+  "shiftFormOutputCoin": {
+    "description": "ShapeShift Asset Trading Form Output Coin",
+    "locatorType": "css",
+    "locator": ".output-coin span:not(.selected-coin)"
+  },
+  "postContinueHeadingText": {
+    "description": "ShapeShift Asset Trading Form Post Continue Button Click Heading",
+    "locatorType": "xpath",
+    "locator": "//*[contains(text(), 'Enter Order Details') or contains(text(), 'Instant Rate')]"
+  },
+  "imgInputCoin": {
+    "description": "Image for input coin on asset trading form post continue",
+    "locatorType": "css",
+    "locator": "#form-views > div:not(.ng-hide) [ng-click=\"open('input')\"] img"
+  },
+  "imgOutputCoin": {
+    "description": "Image for output coin on asset trading form post continue",
+    "locatorType": "css",
+    "locator": "#form-views > div:not(.ng-hide) [ng-click=\"open('output')\"] img"
   }
 }
