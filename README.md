@@ -57,5 +57,5 @@ To test your installation:
 - [ ] Build pipeline integration with GitHub
 - [ ] Browser comparability support
 - [ ] SauceLabs/BrowserStack Integration
-- [ ] Test instructions on Windows/Linux
+- [ ] Support running on Windows
 - [ ] Docker integration
