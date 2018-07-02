@@ -6,7 +6,7 @@ Built with:
 * Mocha.js
 
 ### Installation
-* Requirements:
+Requirements:
   * Java 8+
   * Node 8+
   * Git
