@@ -6,6 +6,10 @@ Built with:
 * Mocha.js
 
 ### Installation
+* Requirements:
+  * Java 8+
+  * Node 8+
+  * Git
 
 1. Clone this repo:
 ```shell
